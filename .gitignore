@@ -7,3 +7,4 @@ __pycache__
 prepared_dataset
 weights.npy
 bias.npy
+.ruff_cache
