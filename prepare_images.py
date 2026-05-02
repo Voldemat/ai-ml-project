@@ -56,7 +56,7 @@ if __name__ == "__main__":
         process_image(
             Path(file_path),
             output_base_path=Path("prepared_dataset/test"),
-            has_pedestrian=False
+            has_pedestrian=False,
         )
     for file_path in os.scandir(
         Path("datasets/pedestrian-no-pedestrian/data/validation/pedestrian")
@@ -64,5 +64,5 @@ if __name__ == "__main__":
         process_image(
             Path(file_path),
             output_base_path=Path("prepared_dataset/test"),
-            has_pedestrian=True
+            has_pedestrian=True,
         )

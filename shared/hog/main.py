@@ -33,4 +33,6 @@ def compute_hog(
                 angle_patch, bins=bin_count, range=(0, 180), weights=mag_patch
             )
             hog_cells[h, w, :] = cell_histogram
-    return np.array(list(normalize(cell_height, cell_width, hog_cells))).flatten()
+    return np.array(
+        list(normalize(cell_height, cell_width, hog_cells))
+    ).flatten()
