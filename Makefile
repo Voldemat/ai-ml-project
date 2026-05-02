@@ -5,3 +5,5 @@ download-dataset:
 	kaggle datasets download tejasvdante/pedestrian-no-pedestrian -p ./datasets/pedestrian-no-pedestrian --unzip
 strip-jupyter-notebooks:
 	nbstripout *.ipynb
+verify-jupyter-notebooks:
+	nbstripout --verify
