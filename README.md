@@ -21,8 +21,4 @@ If you want to explore various jupyter notebooks in repo, start jupyter lab in r
 ```bash
 jupyter lab
 ```
-Make sure you run this command after activating virtual environment(
-```
-source .venv/bin/activate
-```
-)
+Make sure you run this command after activating virtual environment(```source .venv/bin/activate```)
