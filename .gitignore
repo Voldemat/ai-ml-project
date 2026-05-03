@@ -1,10 +1,8 @@
-datasets
+data
 .DS_Store
 .env
 __pycache__
 .venv
 .ipynb_checkpoints
-prepared_dataset
-weights.npy
-bias.npy
 .ruff_cache
+models
