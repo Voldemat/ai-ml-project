@@ -16,10 +16,13 @@ dependencies = [
     "scikit-learn>=1.8.0",
 ]
 
-[tool.ruff]
-line-length = 80
-
 [dependency-groups]
 dev = [
     "tqdm>=4.67.3",
 ]
+
+[tool.basedpyright]
+reportExplicitAny = false
+
+[tool.ruff]
+line-length = 80
