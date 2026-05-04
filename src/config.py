@@ -6,9 +6,11 @@ root_path = Path(__file__).parent / ".."
 
 data_path = root_path / "data"
 
+
 class DatasetType(enum.StrEnum):
     INRIA_PERSON = "inria-person"
     PEDESTRIAN_NO_PEDESTRIAN = "pedestrian-no-pedestrian"
+
 
 data_raw_path = data_path / "raw"
 

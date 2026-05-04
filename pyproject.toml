@@ -6,19 +6,19 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "jupyter>=1.1.1",
-    "kaggle>=2.1.0",
     "matplotlib>=3.10.9",
-    "mypy>=1.20.2",
-    "nbstripout>=0.9.1",
     "numpy>=2.4.4",
     "opencv-python>=4.13.0.92",
-    "ruff>=0.15.12",
-    "scikit-learn>=1.8.0",
 ]
 
 [dependency-groups]
 dev = [
+    "kaggle>=2.1.0",
+    "nbstripout>=0.9.1",
+    "ruff>=0.15.12",
     "tqdm>=4.67.3",
+    "ty>=0.0.34",
+    "types-tqdm>=4.67.3.20260408",
 ]
 
 [tool.basedpyright]

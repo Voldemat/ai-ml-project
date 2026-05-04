@@ -1,7 +1,10 @@
 from typing import Any
 import numpy as np
 
-from .shared.training import ComputeNewWeightsFunction, ComputeNewWeightsFunctionInputs
+from .shared.training import (
+    ComputeNewWeightsFunction,
+    ComputeNewWeightsFunctionInputs,
+)
 
 
 def compute_new_weights(
@@ -23,20 +26,21 @@ def compute_new_weights(
         working_weights -= learning_rate * grad_w
     return working_weights
 
+
 def create_compute_new_weights_function(
     c_parameter: float,
     initial_learning_rate: float,
     decay_rate: float,
 ) -> ComputeNewWeightsFunction:
     def wrapper(
-        inputs: ComputeNewWeightsFunctionInputs
+        inputs: ComputeNewWeightsFunctionInputs,
     ) -> np.typing.NDArray[np.floating[Any]]:
         return compute_new_weights(
             c_parameter,
             initial_learning_rate / (1 + decay_rate * inputs.epoch),
             inputs.inputs,
             inputs.weights,
-            inputs.outputs
+            inputs.outputs,
         )
-    return wrapper
 
+    return wrapper

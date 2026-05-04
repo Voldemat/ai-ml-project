@@ -10,3 +10,12 @@ def add_bias_term_to_inputs(
         np.typing.NDArray[np.floating[Any]],
         np.c_[np.ones((inputs.shape[0], 1)), inputs],
     )
+
+
+def add_bias_term_to_input(
+    inputs: np.typing.NDArray[np.floating[Any]],
+) -> np.typing.NDArray[np.floating[Any]]:
+    return cast(
+        np.typing.NDArray[np.floating[Any]],
+        np.concatenate(([1.0], inputs)),
+    )

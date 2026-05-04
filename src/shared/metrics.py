@@ -2,14 +2,14 @@ from typing import Any
 import numpy as np
 
 
-def accuracy_report(
+def accuracy_score(
     test_dataset: np.typing.NDArray[Any],
     predicted_dataset: np.typing.NDArray[Any],
 ) -> np.typing.NDArray[Any]:
     return np.mean(test_dataset == predicted_dataset)
 
 
-def custom_classification_report(
+def classification_report(
     test_dataset: np.typing.NDArray[Any],
     predicted_dataset: np.typing.NDArray[Any],
 ):
